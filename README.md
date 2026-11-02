@@ -98,6 +98,6 @@ The definitive process recommendations and estimated outcomes are structured bel
 * **Estimated Project Economic Balance:**
   * Fixed Cell Culture Seeding Cost: 170.00 $/L
   * Estimated Cell Culture Value at Harvest: 460 $/L with 95% prediction intervals
-  * Estimated Max Space-Time Profit: 78.79 \$/(L $\cdot$ d) with 95% prediction intervals
+  * Estimated Max Space-Time Profit: 78.79 \$ /(L $\cdot$ d) with 95% prediction intervals
   * Estimated mAb Space-Time Yield: 0.12 mg/(L $\cdot$ d) with 95% prediction intervals
 
