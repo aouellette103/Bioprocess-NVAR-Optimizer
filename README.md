@@ -84,20 +84,20 @@ Over a 20-day (480-hour) rolling simulation, minor biases can gradually compound
 ### Influence of Initial Conditions on Economic Metrics
 The starting configuration of a bioreactor dictates the trajectory of its space-time yield and final profitability. Seeding choices represent a direct financial trade-off between upfront investment and metabolic longevity:
 * **Initial Glucose and Glutamine:** These act as the primary energy and carbon sources driving cellular metabolism. High initial levels provide the fuel necessary to sustain dense cell populations over extended cultivation windows, resulting in a large raw antibody yield. However, over-concentrating these sugars heavily penalizes the system in two ways: it drives up the upfront media cost linearly, and it accelerates the cellular production of toxic byproducts like Lactate and Ammonia, which can drastically inhibit production.
-* **Initial Viable Cell Density (VCD):** Higher starting cell densities reduce the lag phase of the bioreactor, pushing the culture into exponential antibody production much faster. This drastically shortens the required harvest time, which minimizes the time-denominator of the space-time yield equation. However, a high VCD requires an immense amount of starting nutrients just to survive, leading to rapid starvation if not perfectly balanced with glucose. It also scales the initial formulation cost up by $\$0.0005$ per cell/mL.
+* **Initial Viable Cell Density (VCD):** Higher starting cell densities reduce the lag phase of the bioreactor, pushing the culture into exponential antibody production much faster. This drastically shortens the required harvest time, which minimizes the time-denominator of the space-time yield equation. However, a high VCD requires an immense amount of starting nutrients just to survive, leading to rapid starvation if not perfectly balanced with glucose. It also scales the initial formulation cost up by 0.0005$ per cell/mL.
 Maximum space-time profit is achieved when these trade-offs are perfectly balanced. The optimal recipe must choose starting levels high enough to maximize antibody expression, but low enough to control media costs and delay byproduct toxicity, ensuring peak production is achieved before the 1-day vessel downtime penalty drives down the daily return rate.
 ### Global Bioprocess Optimization Targets
 By executing a virtual simulation across thousands of recipe combinations, the NVAR optimization engine isolated the absolute peak economic operating conditions.
 The definitive process recommendations and estimated outcomes are structured below:
 * **Recommended Operational Initial Recipe:**
-  * Initial Glucose Concentration: **5.00 mM**
-  * Initial Glutamine Concentration: **1.00 mM**
-  * Initial Viable Cell Density (VCD): **200,000 cells/mL**
+  * Initial Glucose Concentration: 5.00 mM
+  * Initial Glutamine Concentration: 1.00 mM
+  * Initial Viable Cell Density (VCD): 200,000 cells/mL
 * **Optimal Scheduling Control:**
-  * Recommended Harvest Time: **2.71 days (65.0 hours)**
+  * Recommended Harvest Time: 2.71 days (65.0 hours)
 * **Estimated Project Economic Balance:**
-  * Fixed Cell Culture Seeding Cost: **$\170.00$ $/L**
-  * Estimated Cell Culture Value at Harvest: **$\460$ $/L** with 95% prediction intervals
-  * Estimated Max Space-Time Profit: **$\78.79$ \S/(L $\cdot$ d)** with 95% prediction intervals
-  * Estimated mAb Space-Time Yield: **$0.12$ mg/(L $\cdot$ d)**  with 95% prediction intervals
+  * Fixed Cell Culture Seeding Cost: 170.00 $/L
+  * Estimated Cell Culture Value at Harvest: 460 $/L with 95% prediction intervals
+  * Estimated Max Space-Time Profit: 78.79 $/(L \cdot d) with 95% prediction intervals
+  * Estimated mAb Space-Time Yield: 0.12 mg/(L \cdot d) with 95% prediction intervals
 
